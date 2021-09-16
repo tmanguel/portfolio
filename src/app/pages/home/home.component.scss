@@ -10,13 +10,15 @@
         img{
             height: 32rem;
             border-radius: 50%;
-            border: 5px solid white;
+            border: 5px solid #fff;
+            animation-name: appearPhoto;
+            animation-duration: 2s;
         }
 
         .description{
             
             h1{
-                padding-top: 50px;
+                padding-top: 55px;
                 font-size: 90px;
                 font-weight: 900;
                 animation-name: appearTitle;
@@ -38,18 +40,35 @@
         }
     }
 
-    .place{
-        height: 500px;
-        // background: grey;
+    .scroll{
+        margin: 40px 40px;
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        
+            span{
+                writing-mode: vertical-lr;
+                animation: bounce 0.5s infinite alternate;
+            }
     }
 }
 
 @keyframes appearTitle {
     from {opacity: 0; font-size: 1px;}
     to {opacity: 1; font-size: 90px;}
-   }
+}
 
 @keyframes appearSubtitle {
-from {opacity: 0; font-size: 1px;}
-to {opacity: 0.5; font-size: 20px;}
+    from {opacity: 0; font-size: 1px;}
+    to {opacity: 0.5; font-size: 20px;}
+}
+
+@keyframes appearPhoto {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes bounce {
+    from {margin-top: -10px;}
+    to {margin-top: 0px;}
 }

@@ -1,0 +1,56 @@
+h1 {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  padding-bottom: 400px;
+
+  .ratings {
+    width: 40%;
+
+    div {
+        margin: 30px 0;
+      footer {
+        background-color: grey;
+        height: 3px;
+        border-radius: 2px;
+
+        div {
+          height: 100%;
+
+          &.front {
+            width: 85%;
+            background-color: rgb(57, 202, 238);
+          }
+
+          &.ionic {
+              width: 65%;
+              background-color: rgb(5, 228, 5);
+          }
+
+          &.angular {
+            width: 80%;
+            background-color: red;
+          }
+
+          &.react {
+              width: 50%;
+              background-color: yellow;
+          }
+
+          &.back {
+              width: 55%;
+              background-color: rgb(197, 11, 197);
+          }
+        }
+      }
+    }
+  }
+}

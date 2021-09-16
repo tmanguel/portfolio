@@ -1,4 +1,55 @@
 .home{
-    background-color: red;
-    height: 3000px;
+    padding-top: 120px;
+
+    .first-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7%;
+
+        img{
+            height: 32rem;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        .description{
+            
+            h1{
+                padding-top: 50px;
+                font-size: 90px;
+                font-weight: 900;
+                animation-name: appearTitle;
+                animation-duration: 2s;
+
+                .t{
+                    color: yellowgreen;   
+                }
+            }
+
+            p{
+                padding-top: 40px;
+                font-size: 20px;
+                animation-name: appearSubtitle;
+                animation-duration: 2s;
+                opacity: 0.5;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .place{
+        height: 500px;
+        // background: grey;
+    }
+}
+
+@keyframes appearTitle {
+    from {opacity: 0; font-size: 1px;}
+    to {opacity: 1; font-size: 90px;}
+   }
+
+@keyframes appearSubtitle {
+from {opacity: 0; font-size: 1px;}
+to {opacity: 0.5; font-size: 20px;}
 }

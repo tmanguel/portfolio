@@ -53,4 +53,23 @@ h1 {
       }
     }
   }
+
+  .icons{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .top, .bot, .mid{
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+
+      img{
+        height: 100px;
+        width: auto;
+      }
+    }
+  }
 }

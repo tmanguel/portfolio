@@ -2,7 +2,7 @@
     position: absolute;
     width: 600px;
     height: 600px;
-    background: url('https://hdwallpaperim.com/wp-content/uploads/2017/08/23/472039-digital_art-minimalism-code-text-HTML-color_codes-JavaScript-web_development-programming-syntax_highlighting-CSS-computer-748x421.jpg') 50% 50% no-repeat fixed;
+    background: url("/assets/fondo-codigo.jpeg") 50% 50% no-repeat fixed;
     background-size: cover;
     border-radius: 50%;
     mask-image: radial-gradient(circle at center, black, transparent);
@@ -16,7 +16,7 @@
 }
 .home{
     padding-top: 120px;
-
+    
     .first-section{
         display: flex;
         justify-content: center;

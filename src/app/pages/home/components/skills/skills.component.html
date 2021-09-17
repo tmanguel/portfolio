@@ -32,5 +32,21 @@
             </footer>
         </div>
     </div>
-    <div class="icons">.</div>
+    <div class="icons">
+        <div class="top">
+            <a *ngFor="let skill of skillsTop" [href]="skill.url" target="_blank">
+                <img [src]="skill.icon" alt="-">
+            </a>
+        </div>
+        <div class="mid">
+            <a *ngFor="let skill of skillsMid" [href]="skill.url" target="_blank">
+                <img [src]="skill.icon" alt="-">
+            </a>
+        </div>
+        <div class="bot">
+            <a *ngFor="let skill of skillsBot" [href]="skill.url" target="_blank">
+                <img [src]="skill.icon" alt="-">
+            </a>
+        </div>
+    </div>
 </div>

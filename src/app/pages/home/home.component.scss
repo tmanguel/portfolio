@@ -8,12 +8,9 @@
     mask-image: radial-gradient(circle at center, black, transparent);
     -webkit-mask-image: radial-gradient(black, transparent, transparent, transparent);
     animation: appearPhoto 5s;
+    z-index: -1;
 }
 
-.skills{
-    z-index: 10;
-
-}
 .home{
     padding-top: 120px;
     
@@ -29,11 +26,9 @@
             border: 5px solid #fff;
             animation-name: appearPhoto;
             animation-duration: 2s;
-            z-index: 2;
         }
 
         .description{
-            z-index: 2;
             h1{
                 padding-top: 55px;
                 font-size: 90px;
@@ -53,7 +48,6 @@
     }
 
     .scroll{
-        z-index: 2;
 
         margin: 40px 40px;
         display: flex;

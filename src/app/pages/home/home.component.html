@@ -1,16 +1,28 @@
+<div class="circle" [ngStyle]="{'top': posY, 'left': posX}"></div>
 <div class="home">
-    <div class="first-section">
-        <img src="assets/foto-perfil-redonda.png" alt="">
-        <div class="description">
-            <h1>Hi,</h1>
-            <h1>I'm <span class="t">T</span>omás,</h1>
-            <h1>developer</h1>
-            <p>// Front End Developer / Mobile Developer</p>
-        </div>
+  <div class="first-section">
+    <img src="assets/foto-perfil-redonda.png" alt="" />
+    <div class="description">
+        <h1>Hi,</h1>
+        <h1>I'm <span class="t">T</span>omás,</h1>
+        <div class="slider">
+            <div class="first">
+                <h1>FrontEnd</h1>
+            </div>
+            <h1>Mobile</h1>
+            <h1>Angular</h1>
+            <h1>Ionic</h1>
+            <h1>React</h1>
+            <h1>FrontEnd</h1>
+       </div>
+        <h1 class="developer">developer</h1>
     </div>
-    <div class="scroll">
-        <span>scroll down →</span>
-        <span>scroll down →</span>
-    </div>
+  </div>
+  <div class="scroll">
+    <span>scroll down →</span>
+    <span>scroll down →</span>
+  </div>
 </div>
-<app-skills></app-skills>
+<div class="skills">
+  <app-skills></app-skills>
+</div>

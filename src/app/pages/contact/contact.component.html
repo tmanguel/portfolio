@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>CONTACT</h1>
+  <div class="contact">
+    <form class="form" [formGroup]="contact">
+      <div class="row">
+        <div class="name">
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" maxlength="50" />
+          </mat-form-field>
+        </div>
+        <div class="email">
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="message">
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message" maxlength="1000" rows="10"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="submit">
+        <button mat-raised-button class="button" [disabled]="!contact.valid">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

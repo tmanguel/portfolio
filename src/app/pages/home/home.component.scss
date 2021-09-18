@@ -1,123 +1,206 @@
-.circle{
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: url("/assets/fondo-codigo-2.jpg") 50% 50% no-repeat fixed;
-    background-size: cover;
-    border-radius: 50%;
-    mask-image: radial-gradient(circle at center, black, transparent);
-    -webkit-mask-image: radial-gradient(black, transparent, transparent, transparent);
-    animation: appearCircle 5s;
-    z-index: -1;
-    opacity: 0.5;
+.circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: url("/assets/fondo-codigo.jpeg") 50% 50% no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+  mask-image: radial-gradient(circle at center, black, transparent);
+  -webkit-mask-image: radial-gradient(
+    black,
+    transparent,
+    transparent,
+    transparent
+  );
+  animation: appearCircle 5s;
+  z-index: -1;
+  opacity: 0.5;
 }
 
-.home{
-    padding-top: 120px;
-    
-    .first-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 7%;
+.home {
+  padding-top: 120px;
 
-        img{
-            height: 20rem;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            animation-name: appearPhoto;
-            animation-duration: 2s;
-        }
+  .first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
 
-        .description{
-            h1{
-                padding-top: 55px;
-                font-size: 90px;
-                font-weight: 900;
-                animation-name: appearTitle;
-                animation-duration: 2s;
-
-                .t{
-                    color: yellowgreen;  
-                    // transform: rotate(-100deg)
-                }
-
-                &.developer{
-                    padding-top: 2rem;
-                }
-            }
-
-
-
-
-        }
+    img {
+      height: 20rem;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      animation-name: appearPhoto;
+      animation-duration: 2s;
     }
 
-    .scroll{
+    .description {
+      h1 {
+        padding-top: 55px;
+        font-size: 90px;
+        font-weight: 900;
+        animation-name: appearTitle;
+        animation-duration: 2s;
 
-        margin: 140px 40px;
+        &.developer {
+          padding-top: 2rem;
+        }
+
+        &.hi {
+          font-size: 60px;
+          animation: appearHi 2s;
+        }
+      }
+
+      .name {
         display: flex;
-        justify-content: space-between;
-        height: 90px;
-        
-            span{
-                writing-mode: vertical-lr;
-                animation: bounce 0.7s infinite alternate;
-            }
+
+        .im {
+          padding-right: 2rem;
+        }
+
+        .t {
+          transform: rotate(-10deg);
+          margin-right: -4px;
+          margin-top: -7px;
+
+          h1 {
+            font-size: 110px;
+            color: greenyellow;
+            animation: appearT 2s;
+            text-shadow: 0px 0px 15px greenyellow;
+          }
+        }
+
+        .rest-name{
+          color: greenyellow;
+        }
+      }
     }
+  }
+
+  .scroll {
+    margin: 140px 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+
+    span {
+      writing-mode: vertical-lr;
+      animation: bounce 0.7s infinite alternate;
+    }
+  }
 }
 
 @keyframes appearTitle {
-    from {opacity: 0; font-size: 1px;}
-    to {opacity: 1; font-size: 90px;}
+  from {
+    opacity: 0;
+    font-size: 1px;
+  }
+  to {
+    opacity: 1;
+    font-size: 90px;
+  }
+}
+
+@keyframes appearHi {
+  from {
+    opacity: 0;
+    font-size: 1px;
+  }
+  to {
+    opacity: 1;
+    font-size: 60px;
+  }
+}
+
+@keyframes appearT {
+  from {
+    opacity: 0;
+    font-size: 1px;
+  }
+  to {
+    opacity: 1;
+    font-size: 110px;
+  }
 }
 
 @keyframes appearPhoto {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes appearCircle {
-    from {opacity: 0;}
-    to {opacity: 0.5;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
-
 
 @keyframes bounce {
-    from {margin-top: -20px;}
-    to {margin-top: 0px;}
+  from {
+    margin-top: -20px;
+  }
+  to {
+    margin-top: 0px;
+  }
 }
 
-.slider{
-    display: flex;
-    width: 400px;
-    overflow: hidden;
+.slider {
+  display: flex;
+  width: 400px;
+  overflow: hidden;
 
-    h1{
-        min-width: 25.2rem;
-        margin-bottom: 2.313rem;
-        font-weight: 300 !important;
-        font-style: italic;
-    }
+  h1 {
+    min-width: 25.2rem;
+    margin-bottom: 2.313rem;
+    font-weight: 300 !important;
+    font-style: italic;
+  }
 
-
-   .first{
-       animation: slide 7s 2s infinite linear;
-   }
+  .first {
+    animation: slide 7s 2s infinite linear;
+  }
 }
 
 @keyframes slide {
-    0%{margin-left:0}
-    15%{margin-left:0}
-    20%{margin-left:-25.1rem}
-    35%{margin-left:-25.1rem}
-    40%{margin-left:-50rem}
-    55%{margin-left:-50rem}
-    60%{margin-left:-75.6rem}
-    75%{margin-left:-75.6rem}
-    80%{margin-left:-100.8rem}
-    95%{margin-left:-100.8rem}
-    100%{margin-left:-126rem}
-
+  0% {
+    margin-left: 0;
   }
-
+  15% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: -25.1rem;
+  }
+  35% {
+    margin-left: -25.1rem;
+  }
+  40% {
+    margin-left: -50rem;
+  }
+  55% {
+    margin-left: -50rem;
+  }
+  60% {
+    margin-left: -75.6rem;
+  }
+  75% {
+    margin-left: -75.6rem;
+  }
+  80% {
+    margin-left: -100.8rem;
+  }
+  95% {
+    margin-left: -100.8rem;
+  }
+  100% {
+    margin-left: -126rem;
+  }
+}

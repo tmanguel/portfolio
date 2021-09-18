@@ -1,21 +1,26 @@
 <div class="home">
-  <div class="circle" [ngStyle]="{'top': posY, 'left': posX}"></div>
+  <div class="circle" [ngStyle]="{ top: posY, left: posX }"></div>
   <div class="first-section">
     <img src="assets/foto-perfil-redonda.png" alt="" />
     <div class="description">
-        <h1>Hi,</h1>
-        <h1>I'm <span class="t">T</span>omás,</h1>
-        <div class="slider">
-            <div class="first">
-                <h1>FrontEnd</h1>
-            </div>
-            <h1>Mobile</h1>
-            <h1>Angular</h1>
-            <h1>Ionic</h1>
-            <h1>React</h1>
-            <h1>FrontEnd</h1>
-       </div>
-        <h1 class="developer">developer</h1>
+      <h1 class="hi">Hi,</h1>
+      <div class="name">
+        <div class="im"><h1>I'm</h1></div>
+        <div class="t"><h1>T</h1></div>
+        <div class="rest-name"><h1>omás</h1></div>
+        <div><h1>,</h1></div>
+      </div>
+      <div class="slider">
+        <div class="first">
+          <h1>FrontEnd</h1>
+        </div>
+        <h1>Mobile</h1>
+        <h1>Angular</h1>
+        <h1>Ionic</h1>
+        <h1>React</h1>
+        <h1>FrontEnd</h1>
+      </div>
+      <h1 class="developer">developer</h1>
     </div>
   </div>
   <div class="scroll" id="scroll">
@@ -25,3 +30,4 @@
 </div>
 <app-skills></app-skills>
 <app-certifications></app-certifications>
+<app-contact></app-contact>

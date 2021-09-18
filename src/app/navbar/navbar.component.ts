@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller, private _router: Router) { }
 
   ngOnInit(): void {
   }
 
   public goToSkills(){
-    this.viewportScroller.scrollToPosition([0,740])
+    this._router.navigate(['']);
+    setTimeout(() => {
+      this.viewportScroller.scrollToPosition([0,740]);
+    }, 0);
+
   }
 }

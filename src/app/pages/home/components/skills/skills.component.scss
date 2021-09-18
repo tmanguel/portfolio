@@ -10,7 +10,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
-  padding-bottom: 400px;
+  padding-bottom: 7rem;
 
   .ratings {
     width: 40%;
@@ -19,7 +19,7 @@ h1 {
       margin: 30px 0;
       footer {
         background-color: grey;
-        height: 3px;
+        height: 5px;
         border-radius: 2px;
 
         div {
@@ -27,27 +27,27 @@ h1 {
 
           &.front {
             width: 85%;
-            background-color: rgb(57, 202, 238);
+            background-color: #00cfee;
           }
 
           &.ionic {
             width: 65%;
-            background-color: rgb(5, 228, 5);
+            background-color: #5dadec;
           }
 
           &.angular {
             width: 80%;
-            background-color: red;
+            background-color: #fa3165;
           }
 
           &.react {
             width: 50%;
-            background-color: yellow;
+            background-color: #ff0279;
           }
 
           &.back {
             width: 55%;
-            background-color: rgb(197, 11, 197);
+            background-color: #e4007c;
           }
         }
       }
@@ -69,6 +69,11 @@ h1 {
       img{
         height: 100px;
         width: auto;
+        transition: transform 0.5s;
+      }
+
+      img:hover{
+        transform: scale(1.2);
       }
     }
   }

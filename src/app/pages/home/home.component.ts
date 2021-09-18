@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
   public posY:string = ''
   public posX:string = ''
+  public mouseEvent: any;
 
   constructor() { }
 
@@ -17,13 +18,8 @@ export class HomeComponent implements OnInit {
 
   @HostListener('mousemove', ['$event'])
   public mousemove(event: MouseEvent):void{
+    this.mouseEvent = event
     this.posY = (event.pageY-300) + 'px';
     this.posX = (event.pageX-300) + 'px';
   }
-
-  @HostListener('window:scroll', ['$event'])
-  public scroll(event:Event){
-    console.log(event)
-  }
-
 }

@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1000px;
+
+  h1 {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+
+    .form {
+      width: 50vw;
+      height: 40vh;
+      background-color: #3b3b3b;
+      border-radius: 10px;
+      padding: 4rem;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .name,
+        .email {
+          width: 48%;
+
+          mat-form-field {
+            font-size: 20px;
+            width: 100%;
+            color: #fff;
+          }
+        }
+      }
+
+      .message {
+          width: 100%;
+
+        mat-form-field {
+            width: 100%;
+            font-size: 15px;
+
+        }
+      }
+    }
+  }
+}

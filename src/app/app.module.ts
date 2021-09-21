@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './service/contact.service';
+
 
 @NgModule({
   declarations: [
@@ -16,9 +19,12 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     NavbarModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

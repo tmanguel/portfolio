@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, take } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 
 @Injectable({

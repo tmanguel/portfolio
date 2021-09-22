@@ -18,10 +18,10 @@ export class SkillsComponent implements OnInit {
 
   public skillsMid: any[] = [
     {icon: 'assets/icons/js-icon.svg', url: 'https://developer.mozilla.org/es/docs/Web/JavaScript'},
+    {icon: 'assets/icons/node-icon.svg', url: 'https://nodejs.org/en/'},
     {icon: 'assets/icons/ts-icon.svg', url: 'https://www.typescriptlang.org/'},
-    {icon: 'assets/icons/react-icon.svg', url: 'https://reactjs.org/'},
     {icon: 'assets/icons/bootstrap-icon.svg', url: 'https://getbootstrap.com/'},
-    {icon: 'assets/icons/node-icon.svg', url: 'https://nodejs.org/en/'}
+    {icon: 'assets/icons/react-icon.svg', url: 'https://reactjs.org/'}
   ]
 
 

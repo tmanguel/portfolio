@@ -8,6 +8,7 @@
     width: 100%;
     background: #1d1d1d;
 
+
     .logo{
         margin-left: 60px;
         font-size: 60px;
@@ -15,20 +16,37 @@
         color: yellowgreen;
         transform: rotate(-10deg);
         text-shadow: 0px 0px 15px greenyellow;
+        text-decoration: none;
         }
 
     .right{
         display: flex;
         gap: 60px;
         margin-right: 60px;
+        align-items: center;
 
         div{
             cursor: pointer;
         }
     }
 
-    a{
+    .about{
         color: #fff;
         text-decoration: none;
+    }
+
+    .contact{
+        color: greenyellow;
+        text-decoration: none;
+        border: 1px solid greenyellow;
+        padding: 10px 25px;
+        transition: 0.3s;
+    }
+
+    .contact:hover{
+        background-color: greenyellow;
+        color: #1d1d1d;
+        box-shadow: 0 0 8px greenyellow;
+        transition: 0.3s;
     }
 }

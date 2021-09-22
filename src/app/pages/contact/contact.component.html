@@ -23,7 +23,7 @@
         </mat-form-field>
       </div>
       <div class="submit">
-        <button mat-raised-button class="button" [disabled]="!contact.valid" (click)="submitForm()">
+        <button mat-raised-button class="button" *ngIf="contact.valid" (click)="submitForm()">
           Send Message
         </button>
       </div>

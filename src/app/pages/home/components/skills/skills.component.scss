@@ -8,7 +8,7 @@ h1 {
 
 .skills {
   display: flex;
-  justify-content: space-between;
+  gap: 7rem;
   padding: 0 50px;
   padding-bottom: 7rem;
 
@@ -18,36 +18,46 @@ h1 {
     div {
       margin: 30px 0;
       footer {
-        background-color: grey;
+        background-color: rgb(58, 58, 58);
         height: 5px;
         border-radius: 2px;
 
         div {
           height: 100%;
-
+          border-radius: 2px;
+          
           &.front {
             width: 85%;
             background-color: #00cfee;
+            box-shadow: 0 0 8px #00cfee;
           }
 
           &.ionic {
             width: 65%;
             background-color: #5dadec;
+            box-shadow: 0 0 8px #5dadec;
+
           }
 
           &.angular {
             width: 80%;
             background-color: #fa3165;
+            box-shadow: 0 0 8px #fa3165;
+
           }
 
           &.react {
             width: 50%;
             background-color: #ff0279;
+            box-shadow: 0 0 8px #ff0279;
+
           }
 
           &.back {
             width: 55%;
             background-color: #e4007c;
+            box-shadow: 0 0 8px #e4007c;
+
           }
         }
       }
@@ -58,16 +68,20 @@ h1 {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3rem;
     align-items: center;
+
+    .top{
+      padding-top: 4rem;
+    }
     
     .top, .bot, .mid{
       display: flex;
       justify-content: space-between;
-      gap: 3rem;
+      gap: 4rem;
 
       img{
-        height: 100px;
+        height: 60px;
         width: auto;
         transition: transform 0.5s;
       }

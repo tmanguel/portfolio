@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
     });
+
   }
 
   ngOnInit(): void {}
@@ -36,16 +37,20 @@ export class ContactComponent implements OnInit {
         if (response["result"] == "success"){
           console.log("salio todo perfecto")
           this.openSnackBar('Email enviado con exito!', 'success')
+          this.contact.reset();
+          this.contact.markAsPristine();
+
         }else{
           console.error("hubo un error")
           this.openSnackBar('Ha habido un error.', 'error')
+          this.contact.reset();
+          this.contact.markAsPristine();
         }
       },
       (error) => {
         console.error({error});
       }
     );
-    this.contact.reset();
   }
 
   private openSnackBar(message:string, myClass:string){

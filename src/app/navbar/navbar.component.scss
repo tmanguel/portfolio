@@ -37,7 +37,8 @@
     }
 
     .contact{
-        color: greenyellow;
+        background-color: greenyellow;
+        color: #1d1d1d;
         text-decoration: none;
         border: 1px solid greenyellow;
         padding: 10px 25px;
@@ -45,9 +46,7 @@
     }
 
     .contact:hover{
-        background-color: greenyellow;
-        color: #1d1d1d;
-        box-shadow: 0 0 8px greenyellow;
+        box-shadow: 0 0 15px greenyellow;
         transition: 0.3s;
     }
 }

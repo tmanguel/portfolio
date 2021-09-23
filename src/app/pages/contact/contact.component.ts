@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
     });
-
+    console.log(this.contact)
   }
 
   ngOnInit(): void {}
@@ -31,21 +31,20 @@ export class ContactComponent implements OnInit {
     formData.append("name", this.contact.get("name")!.value);
     formData.append("email", this.contact.get("email")!.value);
     formData.append("message", this.contact.get("message")!.value);
+    this.openSnackBar('Please wait. Processing...')
+
 
     this.contactSrv.postMessage(formData).subscribe(
       (response) => {
         if (response["result"] == "success"){
-          console.log("salio todo perfecto")
-          this.openSnackBar('Email enviado con exito!', 'success')
-          this.contact.reset();
-          this.contact.markAsPristine();
+          this.openSnackBar('Your e-mail has been successfully sent. Thank You!', 'success')
 
         }else{
-          console.error("hubo un error")
           this.openSnackBar('Ha habido un error.', 'error')
-          this.contact.reset();
-          this.contact.markAsPristine();
         }
+
+        this.resetForm();
+
       },
       (error) => {
         console.error({error});
@@ -53,10 +52,17 @@ export class ContactComponent implements OnInit {
     );
   }
 
-  private openSnackBar(message:string, myClass:string){
+  private openSnackBar(message:string, myClass:string = ''){
     this._snackBar.open(message, undefined, {
       duration: 3000,
       panelClass: myClass
+    });
+  }
+
+  private resetForm(){
+    this.contact.reset();
+    Object.keys(this.contact.controls).forEach(key => {
+      this.contact.get(key)?.setErrors(null) ;
     });
   }
 }

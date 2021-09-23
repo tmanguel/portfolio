@@ -1,25 +1,25 @@
 h1 {
-  margin-top: 6.25rem;
-  margin-left: 3.125rem;
-  margin-bottom: 2.5rem;
-  font-size: 3.75rem;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  font-size: 60px;
   font-weight: 900;
 }
 
 .skills {
   display: flex;
   gap: 7rem;
-  padding: 0 3.125rem;
+  padding: 0 50px;
   padding-bottom: 7rem;
 
   .ratings {
     width: 40%;
 
     div {
-      margin: 1.875rem 0;
+      margin: 30px 0;
       footer {
         background-color: rgb(58, 58, 58);
-        height: 0.313rem;
+        height: 5px;
         border-radius: 2px;
 
         div {
@@ -81,7 +81,7 @@ h1 {
       gap: 4rem;
 
       img{
-        height: 3.75rem;
+        height: 60px;
         width: auto;
         transition: transform 0.5s;
       }

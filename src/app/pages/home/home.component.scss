@@ -1,7 +1,7 @@
 .circle {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
   background: url("/assets/fondo-codigo.jpeg") 50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
@@ -18,7 +18,7 @@
 }
 
 .home {
-  padding-top: 120px;
+  padding-top: 7.5rem;
 
   .first-section {
     display: flex;
@@ -36,8 +36,8 @@
 
     .description {
       h1 {
-        padding-top: 55px;
-        font-size: 90px;
+        padding-top: 3.438rem;
+        font-size: 5.625rem;
         font-weight: 900;
         animation-name: appearTitle;
         animation-duration: 2s;
@@ -47,7 +47,7 @@
         }
 
         &.hi {
-          font-size: 60px;
+          font-size: 3.75rem;
           animation: appearHi 2s;
         }
       }
@@ -61,14 +61,14 @@
 
         .t {
           transform: rotate(-10deg);
-          margin-right: -4px;
-          margin-top: -7px;
+          margin-right: -0.25rem;
+          margin-top: -0.438rem;
 
           h1 {
-            font-size: 110px;
+            font-size: 6.875rem;
             color: greenyellow;
             animation: appearT 2s;
-            text-shadow: 0px 0px 15px greenyellow;
+            text-shadow: 0 0 15px greenyellow;
           }
         }
 
@@ -80,10 +80,10 @@
   }
 
   .scroll {
-    margin: 140px 40px;
+    margin: 8.75rem 2.5rem;
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 5.625;
 
     span {
       writing-mode: vertical-lr;
@@ -99,7 +99,7 @@
   }
   to {
     opacity: 1;
-    font-size: 90px;
+    font-size: 5.625rem;
   }
 }
 
@@ -110,7 +110,7 @@
   }
   to {
     opacity: 1;
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
@@ -121,7 +121,7 @@
   }
   to {
     opacity: 1;
-    font-size: 110px;
+    font-size: 6.875rem;
   }
 }
 
@@ -145,16 +145,16 @@
 
 @keyframes bounce {
   from {
-    margin-top: -20px;
+    margin-top: -1.25rem;
   }
   to {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
 .slider {
   display: flex;
-  width: 400px;
+  width: 25rem;
   overflow: hidden;
 
   h1 {

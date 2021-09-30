@@ -92,3 +92,39 @@ h1 {
     }
   }
 }
+
+@media screen and (max-width: 770px) {
+
+  h1{
+    margin-left: 3rem;
+    font-size: 2rem;
+  }
+
+  .skills{
+    flex-direction: column;
+    gap: 5rem;
+
+    .ratings{
+      width: 100%;
+
+      div{
+        margin: 1.2rem 0;
+      }
+    }
+
+    .icons{
+      .top{
+        padding-top: 1rem;
+      }
+
+      .top, .mid, .bot{
+        gap: 1.5rem;
+
+        img{
+          height: 40px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

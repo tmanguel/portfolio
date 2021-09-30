@@ -8,6 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './service/contact.service';
+import { FooterModule } from './footer/footer.module';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 
 @NgModule({
@@ -18,12 +21,14 @@ import { ContactService } from './service/contact.service';
     BrowserModule,
     AppRoutingModule,
     NavbarModule,
+    FooterModule,
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule
   ],
   providers: [
-    ContactService
+    ContactService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

@@ -19,7 +19,10 @@ export class HomeComponent implements OnInit {
   @HostListener('mousemove', ['$event'])
   public mousemove(event: MouseEvent):void{
     this.mouseEvent = event
-    this.posY = (event.pageY-300) + 'px';
+    if ((event.pageY-300) <= 2508){
+      this.posY = (event.pageY-300) + 'px';
+    }
     this.posX = (event.pageX-300) + 'px';
   }
 }
+

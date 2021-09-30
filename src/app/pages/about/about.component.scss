@@ -31,7 +31,7 @@
 
       a:hover {
         padding-left: 3px;
-        font-size: 22px;
+        font-size: 19px;
         transition: 0.3s;
       }
     }
@@ -41,4 +41,27 @@
     width: 40vw;
     padding-bottom: 1rem;
   }
+}
+
+@media screen and (max-width: 770px) {
+
+
+  .title{
+    line-height: 4rem;
+  }
+  .container{
+    flex-direction: column;
+
+    .description{
+      .content{
+        width: 100%;
+      }
+    }
+
+    img{
+      width: 70vw;
+      height: auto;
+    }
+  }
+
 }

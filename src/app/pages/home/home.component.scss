@@ -19,6 +19,7 @@
 
 .home {
   padding-top: 120px;
+  max-height: 1000px;
 
   .first-section {
     display: flex;
@@ -72,7 +73,7 @@
           }
         }
 
-        .rest-name{
+        .rest-name {
           color: greenyellow;
         }
       }
@@ -89,6 +90,10 @@
       writing-mode: vertical-lr;
       animation: bounce 0.7s infinite alternate;
     }
+  }
+
+  .padding-bot {
+    min-height: 14vh;
   }
 }
 
@@ -202,5 +207,91 @@
   }
   100% {
     margin-left: -126rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .circle {
+    display: none;
+  }
+
+  .home {
+    .first-section {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+      img{
+        height: 12rem;
+      }
+
+      .description{
+        width: 100%;
+        padding-left: 3rem;
+
+        .name{
+
+          .t{
+            
+            h1{
+              font-size: 5rem;
+            }
+          }
+
+        }
+
+        h1{
+          padding-top: 2rem;
+          font-size: 3rem;
+
+          &.hi{
+            font-size: 2rem;
+          }
+        }
+
+        .slider{
+          h1{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .scroll{
+      display: none;
+    }
+  }
+
+
+  @keyframes appearTitle {
+    from {
+      opacity: 0;
+      font-size: 1px;
+    }
+    to {
+      opacity: 1;
+      font-size: 3rem;
+    }
+  }
+
+  @keyframes appearHi {
+    from {
+      opacity: 0;
+      font-size: 1px;
+    }
+    to {
+      opacity: 1;
+      font-size: 2rem;
+    }
+  }
+
+  @keyframes appearT {
+    from {
+      opacity: 0;
+      font-size: 1px;
+    }
+    to {
+      opacity: 1;
+      font-size: 5rem;
+    }
   }
 }

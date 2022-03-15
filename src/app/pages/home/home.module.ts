@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { CertificationsComponent } from './components/certifications/certifications.component';
 import { ContactModule } from '../contact/contact.module';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { ContactModule } from '../contact/contact.module';
     HomeComponent,
     SkillsComponent,
     CertificationsComponent,
+    ProjectsComponent,
   ],
   imports: [
     CommonModule,

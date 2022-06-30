@@ -27,34 +27,34 @@ h1 {
           border-radius: 2px;
           
           &.front {
-            width: 85%;
+            width: 80%;
             background-color: #00cfee;
             box-shadow: 0 0 8px #00cfee;
           }
 
           &.ionic {
-            width: 65%;
+            width: 55%;
             background-color: #5dadec;
             box-shadow: 0 0 8px #5dadec;
 
           }
 
           &.angular {
-            width: 80%;
+            width: 65%;
             background-color: #fa3165;
             box-shadow: 0 0 8px #fa3165;
 
           }
 
           &.react {
-            width: 50%;
+            width: 85%;
             background-color: #ff0279;
             box-shadow: 0 0 8px #ff0279;
 
           }
 
           &.back {
-            width: 55%;
+            width: 80%;
             background-color: #e4007c;
             box-shadow: 0 0 8px #e4007c;
 
@@ -83,7 +83,7 @@ h1 {
       img{
         height: 60px;
         width: auto;
-        transition: transform 0.5s;
+        transition: transform 0.2s;
       }
 
       img:hover{
